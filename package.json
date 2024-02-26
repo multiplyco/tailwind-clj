@@ -5,13 +5,13 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fluent-development/tailwind-clj.git"
+    "url": "git+https://github.com/multiplyco/tailwind-clj.git"
   },
   "author": "Henrik Eneroth",
   "license": "MIT",
   "private": false,
   "bugs": {
-    "url": "https://github.com/fluent-development/tailwind-clj/issues"
+    "url": "https://github.com/multiplyco/tailwind-clj/issues"
   },
-  "homepage": "https://github.com/fluent-development/tailwind-clj#readme"
+  "homepage": "https://github.com/multiplyco/tailwind-clj#readme"
 }
