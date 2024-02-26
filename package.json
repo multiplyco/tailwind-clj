@@ -1,6 +1,6 @@
 {
   "name": "@multiplyco/tailwind-clj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scan Clojure files for matches to Tailwind CSS class names.",
   "main": "src/index.js",
   "repository": {
