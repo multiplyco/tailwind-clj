@@ -1,8 +1,7 @@
-let isString = value => typeof value === 'string' || value instanceof String;
+const isString = (value) => typeof value === 'string' || value instanceof String;
 
-
-let scanClojure = content => {
-    var a = [];
+const scanClojure = (content) => {
+    const a = [];
 
     // Match keyword classes
     const keywordMatches = content.matchAll(/:([^\s\])]+)/g);
