@@ -1,5 +1,6 @@
 let isString = value => typeof value === 'string' || value instanceof String;
 
+
 let scanClojure = content => {
     var a = [];
 
@@ -8,8 +9,17 @@ let scanClojure = content => {
     for (const match of keywordMatches) {
         const res = match[1];
 
-        //console.log(res);
         a.push(res);
+
+        if (isString(res)) {
+            const splitMatch = res.match(/[^\.]+/g)
+
+            for (const n in splitMatch){
+                const w = splitMatch[n];
+                a.push(w);
+            }
+        }
+
     }
 
     // Match string classes
@@ -17,15 +27,12 @@ let scanClojure = content => {
     for (const match of stringMatches) {
         const res = match[1];
 
-        //console.log(res);
         // Split string by whitespace
         if (isString(res)) {
             const splitMatch = res.match(/\S+/g)
 
-            //console.log(splitMatch);
             for (const n in splitMatch){
                 const w = splitMatch[n];
-                //console.log(w);
                 a.push(w);
             }
         }
