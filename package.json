@@ -13,5 +13,6 @@
   "bugs": {
     "url": "https://github.com/multiplyco/tailwind-clj/issues"
   },
-  "homepage": "https://github.com/multiplyco/tailwind-clj#readme"
+  "homepage": "https://github.com/multiplyco/tailwind-clj#readme",
+  "keywords": ["clojure", "tailwind", "css"]
 }
